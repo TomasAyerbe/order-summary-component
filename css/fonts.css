@@ -1,0 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+
+@font-face {
+    font-family: 'RedHat500';
+    src: url(../fonts/RedHatDisplay-Medium.ttf);
+}
+
+@font-face {
+    font-family: 'RedHat700';
+    src: url(../fonts/RedHatDisplay-Bold.ttf);
+}
+
+@font-face {
+    font-family: 'RedHat900';
+    src: url(../fonts/RedHatDisplay-Black.ttf);
+}

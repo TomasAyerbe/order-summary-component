@@ -1,0 +1,145 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 16px;
+}
+
+:root {
+    /* Fonts */
+    --red-hat-medium: 'RedHat500';
+    --red-hat-bold: 'RedHat700';
+    --red-hat-black: 'RedHat900';
+
+    /* Primary colors */
+    --pale-blue: hsl(225, 100%, 94%);
+    --bright-blue: hsl(245, 75%, 52%);
+
+    /* Neutral colors */
+    --very-pale-blue: hsl(225, 100%, 98%);
+    --desaturated-blue: hsl(224, 23%, 55%);
+    --dark-blue: hsl(223, 47%, 23%);
+}
+
+.container, .change-plan, .logo-plan, .links {
+    display: flex;
+}
+
+.container, .change-plan {
+    background-color: var(--very-pale-blue);
+    align-items: center;
+}
+
+.info h1, .plan strong {
+    font-family: var(--red-hat-black);
+}
+
+.info h1, .plan strong, .cancel-order:hover {
+    color: var(--dark-blue);
+}
+
+.info h1, .info .description, .cancel-order{
+    text-align: center;
+}
+
+.info h1, .info .description, .proceed-payment {
+    margin: 20px auto;
+}
+
+.info p, .cancel-order {
+    color: var(--desaturated-blue);
+}
+
+.change-plan, .proceed-payment {
+    width: 90%;
+}
+
+.change-plan a, .proceed-payment, .cancel-order {
+    font-family: var(--red-hat-bold);
+}
+
+.change-plan a:hover, .cancel-order {
+    text-decoration: none;
+}
+
+.change-plan a:hover, .proceed-payment:hover, .cancel-order:hover {
+    transition: 0.4s;
+}
+
+.change-plan a:hover, .proceed-payment:hover {
+    opacity: 0.8;
+}
+
+.container {
+    justify-content: center;
+    height: 100vh;
+    background-image: url(../images/pattern-background-mobile.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.card {
+    border-radius: 20px;
+    background-color: #fff;
+    max-width: 330px;
+    min-height: 550px;
+}
+
+.image {
+    margin-bottom: 1.5em;
+}
+
+.image img {
+    max-width: 100%;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.info p {
+    font-family: var(--red-hat-medium);
+}
+
+.description {
+    width: 80%;
+}
+
+.change-plan {
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 10px;
+    justify-content: space-between;
+}
+
+.change-plan a {
+    color: var(--bright-blue);
+}
+
+.logo-plan img {
+    margin-right: 20px;
+}
+
+.links {
+    flex-direction: column;
+}
+
+.proceed-payment {
+    background-color: var(--bright-blue);
+    color: #fff;
+    border-radius: 8px;
+    border: none;
+    padding: 15px;
+    box-shadow: 0px 10px 10px 0px var(--pale-blue);
+}
+
+.proceed-payment:hover {
+    cursor: pointer;
+}
+
+@media screen and (min-width: 1440px) {
+    .container {
+        background-image: url(../images/pattern-background-desktop.svg);
+    }
+}
